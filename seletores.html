@@ -6,7 +6,65 @@
     <title>CSS Selectors</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+        /* seletor universal */
+        *{
+            color: yellow;
+            background-color: #f77;
+        }
+        
+        /*SELETOR DE CLASSE*/
+        .tag {
+            color: yellow;
+            background-color: #f77;
+        }
+
+        /*SELETOR DE ID*/
+        #aprovados {
+            color: yellow;
+            background-color: #f77;
+        }
+
+        /*SELETOR DE FILHOS DIRETO*/
+        #aninhado > div {
+            color: yellow;
+            background-color: #f77;
+        }
+
+        /*SELETOR DE DESCENDENTE*/
+        #aninhado section {
+            color: yellow;
+            background-color: #f77;
+        }
+
+        /*SELETOR DE IRMÃO UMA ADJANCENTE AO OUTRO*/
+        P + ul {
+            color: yellow;
+            background-color: #f77;
+        } 
+
+        /*SELETOR DE IRMÃO NÃO ADJACENTE*/
+        P ~ ol {
+            color: yellow;
+            background-color: #f77;
+        }
+
+        /* SELETOR DE ATRIBUTO */
+        [feira]{
+            color: yellow;
+            background-color: #f77;
+        }
+        
+        /*SELETOR QUE ENVOLVE FILHOS*/
+        span:nth-child(1){
+            color: yellow;
+            background-color: #f77;
+        }
+        
+        /*Todos os filhos ímpares*/
+        section > :nth-child(odd){
+            color: yellow;
+            background-color: #f77;
+        }
     </style>
 </head>
 
