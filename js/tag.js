@@ -16,7 +16,7 @@ const color = {
     }
 }
 
-document.querySelector('.tag').forEach(elemento =>{
+document.querySelectorAll('.tag').forEach(elemento =>{
     const tagName = elemento.tagName.toLowerCase()
 
     elemento.style.borderColor =color.get(tagName)
